@@ -7,42 +7,34 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .director-profile {
-      display: grid;
-      grid-template-columns: 260px minmax(0, 1fr);
-      gap: 36px;
-      align-items: start;
-      margin-top: 24px;
-    }
+.director-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 24px;
+}
 
-    .director-photo {
-      display: block;
-      width: 100%;
-      max-width: 260px;
-      height: auto;
-      border-radius: 12px;
-    }
+.director-photo {
+  display: block;
+  width: 390px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 
-    .director-bio h3 {
-      margin: 0 0 8px;
-      font-size: 1.7rem;
-    }
+.director-bio h3 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+}
 
-    .director-title {
-      margin: 0 0 24px;
-      font-weight: 600;
-    }
+.director-title {
+  margin: 0 0 24px;
+  font-weight: 600;
+}
 
-    .director-bio p {
-      line-height: 1.7;
-    }
-
-    @media (max-width: 700px) {
-      .director-profile {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-    }
+.director-bio p {
+  line-height: 1.7;
+}
   </style>
 </head>
 

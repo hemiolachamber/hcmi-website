@@ -175,7 +175,276 @@
           </div>
         </article>
       </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Musicians | HCMI</title>
+  <link rel="stylesheet" href="style.css">
 
+  <style>
+    .musicians-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+      margin-top: 24px;
+    }
+
+    .musician-card {
+      min-width: 0;
+    }
+
+    .musician-photo {
+      display: block;
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .musician-card h3 {
+      margin: 0 0 8px;
+    }
+
+    .musician-card p,
+    .formosa-profile p {
+      line-height: 1.7;
+    }
+
+    .musician-instrument {
+      margin-top: 0;
+      font-style: italic;
+    }
+
+    .formosa-profile {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-top: 56px;
+    }
+
+    .formosa-photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center bottom;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .musicians-grid,
+      .formosa-profile {
+        grid-template-columns: 1fr;
+      }
+
+      .musician-photo {
+        height: auto;
+        aspect-ratio: 4 / 3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script src="nav.js"></script>
+
+  <main class="section">
+    <div class="wrap">
+      <div class="eyebrow">Artists</div>
+      <h2>Our Musicians</h2>
+
+      <div class="musicians-grid">
+        <article class="musician-card">
+          <img
+            class="musician-photo"
+            src="assets/images/madison.jpeg"
+            alt="Madison Jones"
+            loading="lazy"
+          >
+          <div>
+            <h3>Madison Jones</h3>
+            <p class="musician-instrument">Violin</p>
+            <p>
+              A native of Lexington and a veteran of both the CKYO
+              and UK Symphony, Madison Jones began her violin
+              studies at age five. Her professional experience
+              includes guest appearances with the Chamber Orchestra
+              of Louisville and Cave Run Symphony. She currently
+              serves as Assistant Concertmaster of the Lexington
+              Philharmonic, is a member of the Lexington Chamber
+              Orchestra, maintains a private studio, and performs
+              as a freelance musician.
+            </p>
+          </div>
+        </article>
+
+        <article class="musician-card">
+          <img
+            class="musician-photo"
+            src="assets/images/ethan.jpg"
+            alt="Ethan Young"
+            loading="lazy"
+          >
+          <div>
+            <h3>Ethan Young</h3>
+            <p class="musician-instrument">Cello</p>
+            <p>
+              Ethan Young is a cellist in the Lexington Philharmonic
+              and master cello teacher with the University of
+              Kentucky String Project, as well as an instructor
+              with the Central Kentucky Youth Orchestra and a
+              teaching artist for the Lexington Philharmonic.
+              His musical life spans classical, rock, pop, country,
+              funk, and jazz, with a passion for playing with
+              friends and sharing music with the community.
+            </p>
+          </div>
+        </article>
+
+        <article class="musician-card">
+          <img
+            class="musician-photo"
+            src="assets/images/chase.jpg"
+            alt="Chase Miller"
+            loading="lazy"
+          >
+          <div>
+            <h3>Chase Miller</h3>
+            <p class="musician-instrument">Clarinet</p>
+            <p>
+              Chase Miller is a professional clarinetist and
+              educator in Central Kentucky. He has taught at
+              Transylvania University, Centre College, and
+              Asbury University and serves as program director
+              of CKYO MusicWorks. He has been recognized with
+              the Kentucky Governor's School for the Arts
+              Marlene M. Helm Alumni Achievement Award and
+              participated in South Arts' Emerging Leaders
+              of Color program.
+            </p>
+          </div>
+        </article>
+
+        <article class="musician-card">
+          <img
+            class="musician-photo"
+            src="assets/images/chris.jpg"
+            alt="Chris Mears"
+            loading="lazy"
+          >
+          <div>
+            <h3>Chris Mears</h3>
+            <p class="musician-instrument">Guitar and Vocals</p>
+            <p>
+              Chris Mears is a Lexington-based film and television
+              composer and music editor whose musical path has
+              included bands, recording projects, touring,
+              songwriting, and performance. His work reflects
+              a continuing fascination with musical discovery
+              and the possibilities within each new composition.
+            </p>
+          </div>
+        </article>
+
+        <article class="musician-card">
+          <img
+            class="musician-photo"
+            src="assets/images/Jacob.jpeg"
+            alt="Jacob Coleman"
+            loading="lazy"
+          >
+          <div>
+            <h3>Jacob Coleman</h3>
+            <p class="musician-instrument">Piano</p>
+
+            <p>
+              A native of Athens, Georgia, pianist Jacob Coleman is
+              Associate Professor of Piano and Collaborative Piano
+              at the University of Kentucky School of Music.
+            </p>
+
+            <p>
+              As a collaborator, Dr. Coleman has performed with
+              artists including Franklin Cohen, David Kim, Jeff Nelsen,
+              Leone Buyse, and Amy Porter, as well as members of the
+              Zohn Collective and Kenari Quartet. He has served as an
+              official pianist for the Mid-South Flute Fest, National
+              Trumpet Competition, ProjetoBone Brasil, and Muestra
+              Internacional de Clarinete de Panamá. He has also appeared
+              frequently at conferences of the North American Saxophone
+              Alliance and International Double Reed Society.
+            </p>
+
+            <p>
+              Prior to joining Kentucky, Dr. Coleman directed the
+              Collaborative Piano Program at the University of Southern
+              Mississippi and served as Visiting Assistant Professor at
+              Indiana University’s Jacobs School of Music. He was also a
+              piano staff member at the Meadowmount School of Music.
+              Coleman holds degrees from The University of Texas at Austin,
+              University of Oregon, and University of Georgia.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <section
+        class="formosa-profile"
+        aria-labelledby="formosa-heading"
+      >
+        <img
+          class="formosa-photo"
+          src="assets/images/formosa.png"
+          alt="Formosa Trio"
+          loading="lazy"
+        >
+
+        <div>
+          <div class="eyebrow">Ensemble</div>
+          <h2 id="formosa-heading">Formosa Trio</h2>
+
+          <p>
+            The Formosa Trio, featuring Taiwanese musicians
+            Tze-Ying Wu, viola; Pei-San Chiu, flute; and
+            Chen-Yu Huang, harp, has performed actively together
+            since 2015. Dedicated to expanding and promoting
+            repertoire for this distinctive instrumentation,
+            the ensemble regularly commissions composers to
+            create new works and also creates its own arrangements
+            ranging from classical compositions to Taiwanese
+            folk songs.
+          </p>
+
+          <p>
+            The trio has toured throughout the United States
+            and Taiwan and appeared at flute, harp, and viola
+            conventions and festivals. In 2018, the ensemble
+            released its first album.
+          </p>
+
+          <p>
+            Tze-Ying Wu is Associate Professor of Viola and
+            String Education at the University of Kentucky.
+            Pei-San Chiu is Adjunct Associate Professor of Music
+            in Flute at Indiana University, and Chen-Yu Huang
+            is a harp specialist with Fort Bend Independent
+            School District in Texas and a former Assistant
+            Professor of Harp at Michigan State University.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="footer.js"></script>
+</body>
+</html>
       <section
         class="formosa-profile"
         aria-labelledby="formosa-heading"

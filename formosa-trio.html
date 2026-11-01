@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet the Formosa Trio, HCMI's resident ensemble, and watch performances by the flute, viola, and harp trio.">
+  <title>Formosa Trio | HCMI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .formosa-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:start}
+    .formosa-intro img{width:100%;height:auto;border-radius:12px;display:block}
+    .formosa-intro p{line-height:1.8}
+    .video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:28px}
+    .video-card{min-width:0}
+    .video-frame{position:relative;aspect-ratio:16/9;background:#282324;border-radius:10px;overflow:hidden}
+    .video-frame iframe{width:100%;height:100%;border:0;position:absolute;inset:0}
+    .video-card h3{font-size:1.12rem;margin:12px 0 0}
+    .formosa-members{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:25px}
+    .formosa-members article{padding:20px;border-top:3px solid var(--copper);background:var(--cream)}
+    .formosa-members h3{margin:0 0 5px}
+    .formosa-members p{margin:0}
+    @media(max-width:750px){.formosa-intro,.video-grid{grid-template-columns:1fr}.formosa-members{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <script src="nav.js"></script>
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="eyebrow">HCMI Resident Ensemble</div>
+        <h2>Formosa Trio</h2>
+        <div class="formosa-intro">
+          <img src="assets/images/formosa.png" alt="The Formosa Trio" loading="eager">
+          <div>
+            <p>The Formosa Trio brings together Taiwanese musicians Tze-Ying Wu (viola), Pei-San Chiu (flute), and Chen-Yu Huang (harp). Performing together since 2015, the ensemble is dedicated to expanding the repertoire for this distinctive combination through commissions and arrangements, including interpretations of Taiwanese folk songs.</p>
+            <p>The Trio has toured throughout the United States and Taiwan, including a U.S. tour in 2024. Its appearances include the American Harp Society Summer Institute, the National Flute Association Convention, and the American Viola Society Festival. The ensemble released its debut album, <em>First Impression</em>, in 2018.</p>
+            <p>Recent commissions include works by Zhou Tian, Tsung-Jen Hsieh, and Yuchun Hu, reflecting the Trio's commitment to introducing new music and connecting audiences across cultures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt">
+      <div class="wrap">
+        <div class="eyebrow">The Ensemble</div>
+        <h2>Meet the Musicians</h2>
+        <div class="formosa-members">
+          <article><h3>Tze-Ying Wu</h3><p><strong>Viola</strong></p><p>Associate Professor of Viola and String Education, University of Kentucky.</p></article>
+          <article><h3>Pei-San Chiu</h3><p><strong>Flute</strong></p><p>Adjunct Associate Professor of Music in Flute, Indiana University.</p></article>
+          <article><h3>Chen-Yu Huang</h3><p><strong>Harp</strong></p><p>Harp specialist, Fort Bend Independent School District; formerly Assistant Professor of Harp, Michigan State University.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="video-heading">
+      <div class="wrap">
+        <div class="eyebrow">Watch and Listen</div>
+        <h2 id="video-heading">Performance Videos</h2>
+        <p class="lead">Explore selected performances by the Formosa Trio.</p>
+        <div class="video-grid">
+          <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/mOMhuKZdqsY" title="Formosa Trio performance video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h3>Performance 1</h3></article>
+          <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/9vv56mt4Arw" title="Formosa Trio performance video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h3>Performance 2</h3></article>
+          <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/mahksd4vNcM" title="Formosa Trio performance video 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h3>Performance 3</h3></article>
+          <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/56-TolA66HI" title="Formosa Trio performance video 4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><h3>Performance 4</h3></article>
+        </div>
+      </div>
+    </section>
+    <section class="section alt"><div class="wrap"><h2>Chamber Music for Every Community</h2><p class="lead">As a resident ensemble of Hemiola Chamber Music Initiative, the Formosa Trio shares HCMI's commitment to engaging communities through chamber music and championing new works.</p><a class="button" href="contact.html">Connect with HCMI</a></div></section>
+  </main>
+  <script src="footer.js"></script>
+</body>
+</html>

@@ -13,6 +13,7 @@ document.write(`
         <a href="index.html">Home</a>
         <a href="director.html">Artistic Director</a>
         <a href="musicians.html">Musicians</a>
+        <a href="formosa-trio.html">Resident Ensemble</a>
         <a href="events.html">Events</a>
         <a href="contact.html">Contact</a>
       </nav>

@@ -32,8 +32,7 @@
       margin: 0 0 8px;
     }
 
-    .musician-card p,
-    .formosa-profile p {
+    .musician-card p {
       line-height: 1.7;
     }
 
@@ -42,27 +41,9 @@
       font-style: italic;
     }
 
-    .formosa-profile {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: 32px;
-      align-items: start;
-      margin-top: 56px;
-    }
-
-    .formosa-photo {
-      display: block;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      object-position: center bottom;
-      border-radius: 12px;
-    }
 
     @media (max-width: 700px) {
-      .musicians-grid,
-      .formosa-profile {
+      .musicians-grid {
         grid-template-columns: 1fr;
       }
 
@@ -214,18 +195,7 @@
         </article>
       </div>
 
-      <section class="formosa-profile" aria-labelledby="formosa-heading">
-        <a href="formosa-trio.html" aria-label="Explore the Formosa Trio">
-          <img class="formosa-photo" src="assets/images/formosa.png" alt="Formosa Trio" loading="lazy">
-        </a>
-        <div>
-          <div class="eyebrow">Resident Ensemble</div>
-          <h2 id="formosa-heading">Formosa Trio</h2>
-          <p>The Formosa Trio brings together Taiwanese musicians Tze-Ying Wu (viola), Pei-San Chiu (flute), and Chen-Yu Huang (harp). The ensemble performs internationally and expands its repertoire through new commissions and arrangements.</p>
-          <p>Discover the Trio's story, musicians, and performance videos on its dedicated page.</p>
-          <a class="button" href="formosa-trio.html">Explore the Formosa Trio</a>
-        </div>
-      </section>
+
     </div>
   </main>
 
